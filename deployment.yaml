@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: landingpage
+  labels:
+    app: landingpage-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: landingpage-app
+  template:
+    metadata:
+      labels:
+        app: landingpage-app
+    spec:
+      containers:
+      - name: landingpage-app-deployment
+        image: denishjackson/landingpage-app
+        resources:
+          requests:
+            cpu: "100m"
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
