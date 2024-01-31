@@ -6,13 +6,13 @@ This guide provides step-by-step instructions for deploying your application usi
 
 Before you begin, ensure you have the following installed:
 
-**Docker:** Install Docker
+**Docker:** [Install Docker](https://docs.docker.com/get-docker/)
 
-**Kubernetes:** Install Kubernetes
+**Kubernetes:** [Install Kubernetes](https://kubernetes.io/docs/setup/)
 
-**kubectl:** Install kubectl
+**kubectl:** [Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 
-**Docker Hub account:** Sign in or Sign up for Docker Hub
+**Docker Hub account:** [Sign up for Docker Hub](https://hub.docker.com/)
 
 ### Dockerizing Your Application
 
