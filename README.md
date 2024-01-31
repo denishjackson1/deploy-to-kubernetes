@@ -74,3 +74,4 @@ Once the deployment is successful, you can access your application using the IP 
 ```bash
 kubectl get svc
 ```
+![Alt text](image-1.png)
