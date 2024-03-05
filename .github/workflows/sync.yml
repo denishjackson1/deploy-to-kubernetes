@@ -13,8 +13,16 @@ jobs:
       - name: Checkout source repository
         uses: actions/checkout@v2
 
+      - name: Set up Git
+        run: |
+          git config --global user.name "denishjackson1"
+          git config --global user.email "denishkomakech@gmail.com"
+
+      - name: Update remote URL
+        run: |
+          git remote set-url origin https://github.com/denishjackson/webhooktest.git
+          git remote -v  # Verify the new remote URL
+
       - name: Push changes to target repository
         run: |
-          git config --global user.name "denishjackson"
-          git config --global user.email "kimsalf.d@gmail.com"
-          git push --force "https://github.com/denishjackson/webhooktest.git" HEAD:main
+          git push --force origin HEAD:main
