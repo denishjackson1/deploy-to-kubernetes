@@ -1,4 +1,4 @@
-# Deploying Application to Kubernetes Cluster
+# Deploying Application to Kubernetes Cluster.
 
 This guide provides step-by-step instructions for deploying your application using Docker and Kubernetes.
 
