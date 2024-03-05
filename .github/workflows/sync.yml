@@ -1,0 +1,21 @@
+name: Sync Changes
+
+on:
+  push:
+    branches:
+      - main  # Adjust this to match your source branch
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source repository
+        uses: actions/checkout@v2
+
+      - name: Push changes to target repository
+        run: |
+          git config --global user.name "denishjackson"
+          git config --global user.email "kimsalf.d@gmail.com"
+          git push --force "https://github.com/denishjackson/webhooktest.git" HEAD:main
+
